@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://FachryAlfareeza.github.io/IETO-Dashboard/",
+  "homepage": "https://fachryalfareeza.github.io/IETO-Dashboard/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
