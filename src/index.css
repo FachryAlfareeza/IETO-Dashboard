@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  min-height: 100vh;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #020617;
+}
+
+@layer components {
+  .ticker-wrapper {
+    overflow: hidden;
+  }
+
+  .ticker-content {
+    display: flex;
+    white-space: nowrap;
+    animation: ticker 30s linear infinite;
+  }
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Recharts customization */
+.recharts-cartesian-grid-vertical line,
+.recharts-cartesian-grid-horizontal line {
+  stroke: #334155;
+}
+
+.recharts-text {
+  fill: #94a3b8;
+}
